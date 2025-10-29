@@ -1,29 +1,11 @@
-from lexer import lexer, lex_comment
-
 class SyntaxAnalyzer:
-    def __init__(self, source_code):
-        # Remove comments and tokenize
-        self.source_code = lex_comment(source_code)
-        self.tokens = []
-        self.tokenize()
+    def __init__(self, tokens):
+        self.tokens = tokens
         self.current_index = 0
         self.current_token = self.tokens[0] if self.tokens else None
         self.output = []
         
-    def tokenize(self):
-        """Convert source code into list of tokens"""
-        index = 0
-        while index < len(self.source_code):
-            if self.source_code[index].isspace():
-                index += 1
-                continue
-            
-            token_type, lexeme, index = lexer(self.source_code, index)
-            if token_type:
-                self.tokens.append((token_type, lexeme))
-        
-        # Add EOF token
-        self.tokens.append(("EOF", ""))
+    
     
     def next_token(self):
         """Move to next token"""
@@ -467,37 +449,5 @@ class SyntaxAnalyzer:
             return False, [str(e)]
 
 
-def main():
-    input_files = ["t1.txt"]
-    output_files = ["o1.txt"]
-    
-    for input_file, output_file in zip(input_files, output_files):
-        try:
-            with open(input_file, "r") as f:
-                source_code = f.read()
-            
-            analyzer = SyntaxAnalyzer(source_code)
-            success, output = analyzer.parse()
-            
-            with open(output_file, "w") as f:
-                if success:
-                    f.write("Syntax Analysis Successful!\n")
-                    f.write("=" * 50 + "\n\n")
-                    for line in output:
-                        f.write(line + "\n")
-                    print(f"Success! Output written to {output_file}")
-                else:
-                    f.write("Syntax Analysis Failed!\n")
-                    f.write("=" * 50 + "\n\n")
-                    for line in output:
-                        f.write(line + "\n")
-                    print(f"Syntax error found. Check {output_file} for details.")
-        
-        except FileNotFoundError:
-            print(f"Error: Could not find {input_file}")
-        except Exception as e:
-            print(f"Error processing {input_file}: {str(e)}")
-
-
 if __name__ == "__main__":
-    main()
+    pass
