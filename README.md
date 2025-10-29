@@ -1,6 +1,7 @@
 ## 1. Project Title and Description
 
    Assignment 2 - Rat25F Syntax Analyzer
+   
    CPSC323 - Compilers & Languages
 
 ## 2. Group Members
