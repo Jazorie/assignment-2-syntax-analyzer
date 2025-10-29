@@ -5,10 +5,7 @@
 
 2. Group Members
 
-   Evan Miller
-   Jasmine Vu
-   Nathen Paniagua
-   Ryan Franson
+   Evan Miller, Jasmine Vu, Nathen Paniagua, Ryan Franson
 
 3. Files Included
 
