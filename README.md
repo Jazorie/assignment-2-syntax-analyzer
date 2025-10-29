@@ -13,6 +13,8 @@
 
    syntax.py - Syntax analyzer
 
+   main.py - Run tests
+
    t1.txt, t2.txt, t3.txt - Test input files
 
    o1.txt, o2.txt, o3.txt - Test output files
@@ -21,4 +23,4 @@
 
 ## 4. How to Run
 
-   python3 syntax.py
+   python3 main.py
