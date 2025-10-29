@@ -1,13 +1,13 @@
-1. Project Title and Description
+###1. Project Title and Description
 
    Assignment 2 - Rat25F Syntax Analyzer
    CPSC323 - Compilers & Languages
 
-2. Group Members
+###2. Group Members
 
    Evan Miller, Jasmine Vu, Nathen Paniagua, Ryan Franson
 
-3. Files Included
+###3. Files Included
 
    lexer.py - Lexical analyzer
 
@@ -19,6 +19,6 @@
 
    README.md
 
-5. How to Run
+###5. How to Run
 
    python3 syntax.py
