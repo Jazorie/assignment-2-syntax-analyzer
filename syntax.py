@@ -469,7 +469,7 @@ class SyntaxAnalyzer:
 
 def main():
     input_files = ["t1.txt"]
-    output_files = ["syntax_output.txt"]
+    output_files = ["o1.txt"]
     
     for input_file, output_file in zip(input_files, output_files):
         try:
