@@ -1,1 +1,45 @@
+" test case 2: Testing if-else, multiple functions, and boolean operations "
+function max (a integer, b integer)
+{
+    if (a > b)
+        return a;
+    else
+        return b;
+    fi
+}
 
+function min (x integer, y integer)
+{
+    if (x < y)
+        return x;
+    else 
+        return y;
+    fi
+}
+
+integer num1, num 2, result;
+real average;
+boolean flag;
+
+get(num1, num2);
+
+result = max(num1, num2);
+put(result);
+
+result = min(num1, num2);
+put(result);
+
+average = 3.14
+put(average);
+
+flag = true;
+
+if (num1 == num2)
+    put(num1);
+fi
+
+while (num1 < 100)
+{
+    num1 = num1 + 1;
+    put(num1);
+}

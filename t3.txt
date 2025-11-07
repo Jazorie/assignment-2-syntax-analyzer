@@ -1,1 +1,13 @@
+" test case 3: Testing syntax error detection"
 
+function test (x integer)
+{
+    return x * 2
+}
+
+#
+integer a, b;
+a = 5;
+b = a + 3;
+put(b);
+#
