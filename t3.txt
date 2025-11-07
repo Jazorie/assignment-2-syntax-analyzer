@@ -2,7 +2,7 @@
 
 function test (x integer)
 {
-    return x * 2
+    return x * 2;
 }
 
 #

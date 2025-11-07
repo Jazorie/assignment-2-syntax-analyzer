@@ -16,8 +16,8 @@ function min (x integer, y integer)
         return y;
     fi
 }
-
-integer num1, num 2, result;
+#
+integer num1, num2, result;
 real average;
 boolean flag;
 
@@ -29,7 +29,7 @@ put(result);
 result = min(num1, num2);
 put(result);
 
-average = 3.14
+average = 3.14;
 put(average);
 
 flag = true;
@@ -43,3 +43,4 @@ while (num1 < 100)
     num1 = num1 + 1;
     put(num1);
 }
+#
